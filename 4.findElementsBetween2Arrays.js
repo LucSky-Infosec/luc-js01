@@ -1,7 +1,7 @@
 function findElements(arr1,arr2){
     var arr = [];
     var len2=arr2.length;
-    for (let i=0; i<len2;i++){
+    for (let i=0; i<len2;i++){ 
         let result=arr1.indexOf(arr2[i])
         if (result != true){
             arr.push(arr2[i])
