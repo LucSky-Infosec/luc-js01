@@ -17,4 +17,4 @@ for (let i=0;i<len;i++){
 }
 console.log(t)
 console.log(line1 + "\n"+line2+"\n"+line3)
-console.log(arr)
+console.log(arr) 
