@@ -20,7 +20,7 @@ function formatMoney(number){
     result=parseFloat(result);
     result=result.toString()+unit;
     return result;
-}
+} 
 console.log(formatMoney(1000));
 console.log(formatMoney(1123400000));
 console.log(formatMoney(1342222));
