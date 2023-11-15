@@ -21,7 +21,6 @@ function readNumberVietnamse(number){
         reversedStr += str[i];
         count1++
     }
-
 }
 readNumberVietnamse(95052702)
 /*Millions, thousands, hundreds, units */
