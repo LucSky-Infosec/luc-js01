@@ -1,7 +1,7 @@
 //Author: Nguyen Cong Luc
 function formatMoney(x) {
     var money = "";
-    if (x.toString().includes(".")) {
+    if (x.toString().includes(".")) { 
         var arr_split = x.toString().split(".");
         money = arr_split[0];
     }
