@@ -7,7 +7,7 @@ const basicRoman = {
     500: "D",
     1000: "M"
 };
-const specialRoman = {
+const specialRoman = { 
     4: "IV",
     9: "IX",
     40: "XL",
