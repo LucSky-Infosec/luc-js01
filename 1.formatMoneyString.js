@@ -1,5 +1,5 @@
 //Author: Nguyen Cong Luc
-function formatMoney(x) {
+function formatMoney(x) { 
     var money = "";
     if (x.toString().includes(".")) { 
         var arr_split = x.toString().split(".");
