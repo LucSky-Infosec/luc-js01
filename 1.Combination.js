@@ -1,5 +1,5 @@
 var result=0
-function combination(k,n){
+function combination(k,n){ 
     if (k==0||n==k){
         return 1 
     }
