@@ -1,0 +1,105 @@
+:root {
+    --full-color: #140121; 
+    color: var(--full-color); 
+}
+
+body {
+    background-color: #18042d;
+    background-color: var(--full-color);;
+    margin: 0; 
+    padding: 0; 
+    background: #010002; 
+    background: var(--full-color);;
+}
+
+.shadow {
+    position: relative;
+    margin: 100px auto;
+    width: 500px;
+    height: 500px;
+    background: #010002; 
+    background: var(--full-color);
+    border-radius: 50%; 
+}
+
+.dot {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shadow:before,
+.shadow:after {
+    content: '';
+    position: absolute;
+    top: -0.5px;
+    left: -0.5px;
+    right: -1px;
+    bottom: -2px;
+    /* background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000); */
+    background: linear-gradient(45deg, #6507a4,#8c31cd);
+
+    background-size: 400% 400%;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    border-radius: 50%;
+    z-index: -1;
+    animation: animate 3s ease alternate infinite;
+}
+
+/* Hiệu ứng mờ cho viền ngoại cảnh */
+.shadow:after {
+    filter: blur(30px);
+}
+
+.dot {
+    position: relative;
+    background: white;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    filter: blur(2px); 
+}
+
+
+#hour {
+    position: absolute;
+    background: #ffff;
+    width: 1%;
+    height: 25%;
+    top: 25%;
+    left: 49.25%;
+    opacity: 0.8;
+    filter: blur(1px);
+    transform: rotate(40deg);
+    transform-origin: bottom;
+}
+
+#minute {
+    position: absolute;
+    background: #ffff;
+    width: 1%;
+    height: 30%;
+    top: 20%;
+    left: 49.25%;
+    opacity: 0.8;
+    filter: blur(1px);
+    transform: rotate(210deg);
+    transform-origin: bottom;
+}
+
+#second {
+    position: absolute;
+    background: #8c31cd;
+    width: 1%;
+    height: 40%;
+    top: 10%;
+    left: 49.25%;
+    opacity: 0.8;
+    filter: blur(1px);
+    transform: rotate(10deg);
+    transform-origin: bottom;
+}
